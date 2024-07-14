@@ -9,7 +9,7 @@ RUN pip3 install -r req.txt --break-system-packages
 
 WORKDIR /app
 
-COPY . /app/
+COPY interview_task /app
 RUN ls -la .
 EXPOSE 8000
-CMD ["python", "interview_task/manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["python", "manage.py", "runserver", "0.0.0.0:8000"]
