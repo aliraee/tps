@@ -1,12 +1,10 @@
-FROM python:slim
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y iputils-ping python3 python3-pip
+
+
+RUN pip3 install django
 
 WORKDIR /app
-
-RUN apt-get update -y
-RUN apt-get install -y iputils-ping
-
-COPY req.txt /app/
-RUN pip install --no-cache-dir -r req.txt
 
 COPY ./interview_task /app/
 
