@@ -21,7 +21,12 @@ docker build -t tapsi-interview .
     [http://127.0.0.1:8000/ip/](http://127.0.0.1:8000/ip/)
 
 5. you can enter your desiered IP in HTML Form tab and ping to entered IP.
-
+    this is simple request data format in raw query
+    ```
+        {
+            "ip" : "192.168.1.1"
+        }
+    ```
 6. for option you can run project test by this command after setting up a running container of this project
 ```
 docker exec -it app python manage.py test
