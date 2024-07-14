@@ -1,6 +1,0 @@
-1-run this command
-docker-compose up -d
-
-2-use 127.0.0.1:8000/ip
-
-enjoy!
